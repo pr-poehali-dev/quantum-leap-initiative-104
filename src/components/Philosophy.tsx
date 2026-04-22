@@ -1,6 +1,33 @@
 import { useEffect, useRef, useState } from "react"
 import { HighlightedText } from "./HighlightedText"
 
+const buildingTypes = [
+  {
+    title: "Каркасная технология",
+    description: "Классический каркас — скорость монтажа, отличная теплоизоляция и свобода в планировке.",
+  },
+  {
+    title: "Каркас БЛЭК",
+    description: "Усиленная каркасная технология с повышенной жёсткостью конструкции и увеличенным сроком службы.",
+  },
+  {
+    title: "Сибит (газобетон)",
+    description: "Тёплые, прочные и экономичные стены. Идеальное соотношение цены, скорости и энергоэффективности.",
+  },
+  {
+    title: "Брус профилированный",
+    description: "Природная красота дерева, точная геометрия соединений и минимальная усадка — эстетика и надёжность.",
+  },
+  {
+    title: "Брус клееный",
+    description: "Максимальная стабильность и минимальная усадка. Дома из клееного бруса не трескаются и не деформируются.",
+  },
+  {
+    title: "Модульное строительство",
+    description: "Заводская готовность модулей — рекордные сроки возведения и контролируемое качество каждого элемента.",
+  },
+]
+
 const philosophyItems = [
   {
     title: "Качество без компромиссов",
@@ -25,7 +52,9 @@ const philosophyItems = [
 
 export function Philosophy() {
   const [visibleItems, setVisibleItems] = useState<number[]>([])
+  const [visibleTypes, setVisibleTypes] = useState<number[]>([])
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
+  const typeRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,13 +73,32 @@ export function Philosophy() {
       if (ref) observer.observe(ref)
     })
 
-    return () => observer.disconnect()
+    const typeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = Number(entry.target.getAttribute("data-type-index"))
+          if (entry.isIntersecting) {
+            setVisibleTypes((prev) => [...new Set([...prev, index])])
+          }
+        })
+      },
+      { threshold: 0.15 },
+    )
+
+    typeRefs.current.forEach((ref) => {
+      if (ref) typeObserver.observe(ref)
+    })
+
+    return () => {
+      observer.disconnect()
+      typeObserver.disconnect()
+    }
   }, [])
 
   return (
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-24">
           {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
             <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наш подход</p>
@@ -98,6 +146,31 @@ export function Philosophy() {
             ))}
           </div>
         </div>
+
+        {/* Building technologies block */}
+        <div>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Технологии строительства</p>
+          <h3 className="text-3xl md:text-4xl font-medium tracking-tight mb-12">
+            Строим из того, что <HighlightedText>подходит вам</HighlightedText>
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+            {buildingTypes.map((type, index) => (
+              <div
+                key={type.title}
+                ref={(el) => { typeRefs.current[index] = el }}
+                data-type-index={index}
+                className={`pl-6 border-l border-border transition-all duration-700 ${
+                  visibleTypes.includes(index) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <h4 className="text-base font-medium mb-2">{type.title}</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">{type.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   )
