@@ -106,11 +106,15 @@ export function Hero() {
         }}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-white/70 mb-4">{"Строительный альянс"}</p>
+          <div className="flex justify-center mb-8">
+            <img
+              src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/1bf2c0e1-34d7-4806-9625-97b93e425aca.jpg"
+              alt="ФорТЭК"
+              className="h-24 w-auto md:h-32"
+            />
+          </div>
 
-          <h1 className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl">
-            {"ФорТЭК"}
-            <br />
+          <h1 className="text-5xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[1.1] lg:text-6xl">
             <span className="text-orange-200">{"Строим надёжно"}</span>
           </h1>
         </div>
