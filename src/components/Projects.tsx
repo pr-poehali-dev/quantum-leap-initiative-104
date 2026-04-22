@@ -4,9 +4,9 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Загородный дом 280 м²",
-    category: "Малоэтажное строительство",
-    location: "Московская область",
+    title: "Каркасный дом, СНТ Лидер",
+    category: "Классическая каркасная технология",
+    location: "Кубовинский сельсовет, Новосибирская область",
     year: "2024",
     image: "/images/hously-1.png",
   },
