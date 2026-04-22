@@ -24,9 +24,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Торговый центр «Меридиан»",
-    category: "Коммерческое строительство",
-    location: "Подмосковье",
+    title: "Капитальный ремонт Мясоконсервного завода",
+    category: "Капитальный ремонт помещений",
+    location: "г. Бийск",
     year: "2023",
     image: "/images/hously-2.png",
     gallery: [],
