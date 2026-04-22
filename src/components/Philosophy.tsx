@@ -125,7 +125,7 @@ export function Philosophy() {
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Строительство — это не просто стены и кровля. Это дом, в котором будут жить ваши близкие, или объект, в котором будет расти ваш бизнес. Мы относимся к каждому проекту именно так.
+              Строительство — это не просто стены и кровля. Это дом, в котором будут жить Ваши близкие, или объект, в котором будет расти Ваш бизнес. Мы относимся к каждому проекту именно так.
             </p>
 
             {philosophyItems.map((item, index) => (
@@ -156,7 +156,7 @@ export function Philosophy() {
         <div>
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Технологии строительства</p>
           <h3 className="text-3xl md:text-4xl font-medium tracking-tight mb-12">
-            Строим из того, что <HighlightedText>подходит вам</HighlightedText>
+            Строим из того, что <HighlightedText>подходит Вам</HighlightedText>
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
             {buildingTypes.map((type, index) => (
