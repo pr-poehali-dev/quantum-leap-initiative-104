@@ -6,11 +6,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img
-                src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/1bf2c0e1-34d7-4806-9625-97b93e425aca.jpg"
-                alt="ФорТЭК"
-                className="h-12 w-auto rounded-sm"
-              />
+              <span className="font-semibold text-lg tracking-wide">ФорТЭК</span>
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Строительный альянс ФорТЭК — строительство малоэтажных домов и коммерческих объектов. Качество, сроки, надёжность.
