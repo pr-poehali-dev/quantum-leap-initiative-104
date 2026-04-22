@@ -58,7 +58,7 @@ export function CatalogForm() {
   }
 
   return (
-    <section className="py-32 md:py-29 bg-secondary/40">
+    <section id="catalog" className="py-32 md:py-29 bg-secondary/40">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Каталог</p>
