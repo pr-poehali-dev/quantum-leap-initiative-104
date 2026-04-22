@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { HighlightedText } from "./HighlightedText"
+import Icon from "@/components/ui/icon"
 
 const buildingTypes = [
   {
@@ -33,20 +34,24 @@ const philosophyItems = [
     title: "Качество без компромиссов",
     description:
       "Используем только проверенные материалы и технологии. Каждый узел, каждая конструкция проходит контроль — потому что дом строится на десятилетия.",
+    icon: "ShieldCheck",
   },
   {
     title: "Сроки — наш приоритет",
     description:
       "Чётко выстроенная система управления проектами позволяет сдавать объекты в срок. Мы не переносим дедлайны и держим слово перед каждым заказчиком.",
+    icon: "Clock",
   },
   {
     title: "Прозрачность на каждом этапе",
     description:
       "Вы всегда знаете, что происходит на стройке: отчёты, фото, онлайн-контроль. Никаких сюрпризов в смете и никаких скрытых платежей.",
+    icon: "Eye",
   },
   {
     title: "Опыт в каждом проекте",
     description: "За плечами — сотни сданных объектов: от уютных загородных домов до масштабных коммерческих комплексов. Мы знаем строительство изнутри.",
+    icon: "Award",
   },
 ]
 
@@ -136,7 +141,7 @@ export function Philosophy() {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex gap-6">
-                  <span className="text-muted-foreground/50 text-sm font-medium">0{index + 1}</span>
+                  <Icon name={item.icon} size={22} className="text-[rgb(251,146,60)] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-xl font-medium mb-3">{item.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{item.description}</p>
