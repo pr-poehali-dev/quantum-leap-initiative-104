@@ -106,7 +106,7 @@ export function Hero() {
         }}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-1">
             <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png" alt="ФорТЭК" className="h-28 w-auto object-contain md:h-40 lg:h-48" />
           </div>
 
