@@ -65,18 +65,18 @@ export function CatalogForm() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0 bg-background/55" />
       </div>
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Каталог</p>
-          <h2 className="text-4xl md:text-6xl font-medium leading-[1.1] tracking-tight mb-6 text-balance">
+          <p className="text-foreground/70 text-sm tracking-[0.3em] uppercase mb-6 font-medium">Каталог</p>
+          <h2 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight mb-6 text-balance drop-shadow-sm">
             Получите <HighlightedText>каталог</HighlightedText>
             <br />
             типовых домов
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-2xl">
+          <p className="text-foreground/80 text-lg leading-relaxed mb-12 max-w-2xl font-medium">
             Выберите интересующий материал — мы пришлём подборку готовых проектов с планировками и ценами.
           </p>
 
@@ -95,10 +95,10 @@ export function CatalogForm() {
                       key={m.id}
                       type="button"
                       onClick={() => toggleMaterial(m.id)}
-                      className={`px-6 py-3 text-sm border transition-colors duration-200 ${
+                      className={`px-6 py-3 text-sm border-2 font-medium transition-colors duration-200 ${
                         selected.includes(m.id)
                           ? "bg-foreground text-primary-foreground border-foreground"
-                          : "bg-transparent text-foreground border-border hover:border-foreground/50"
+                          : "bg-background/40 text-foreground border-foreground/60 hover:border-foreground"
                       }`}
                     >
                       {m.label}
@@ -118,7 +118,7 @@ export function CatalogForm() {
                   required
                   value={form.name}
                   onChange={handleChange}
-                  className="flex-1 border border-border px-5 py-4 text-sm bg-transparent focus:outline-none focus:border-foreground/70 transition-colors placeholder:text-muted-foreground"
+                  className="flex-1 border-2 border-foreground/50 px-5 py-4 text-sm bg-background/40 focus:outline-none focus:border-foreground transition-colors placeholder:text-foreground/50 font-medium"
                 />
                 <input
                   type="tel"
@@ -127,7 +127,7 @@ export function CatalogForm() {
                   required
                   value={form.phone}
                   onChange={handleChange}
-                  className="flex-1 border border-border px-5 py-4 text-sm bg-transparent focus:outline-none focus:border-foreground/70 transition-colors placeholder:text-muted-foreground"
+                  className="flex-1 border-2 border-foreground/50 px-5 py-4 text-sm bg-background/40 focus:outline-none focus:border-foreground transition-colors placeholder:text-foreground/50 font-medium"
                 />
               </div>
 
