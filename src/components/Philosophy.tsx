@@ -114,12 +114,14 @@ export function Philosophy() {
               <HighlightedText>ответственностью</HighlightedText>
             </h2>
 
-            <div className="relative hidden lg:block">
+            <div className="relative hidden lg:block mt-10 overflow-hidden">
               <img
-                src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
-                className="opacity-90 relative z-10 w-auto"
+                src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/8c302806-c102-4df4-8976-6953e2f4ec07.jpeg"
+                alt="Строительство"
+                className="w-full h-80 object-cover"
               />
+              <div className="absolute inset-0 bg-black/30" />
+              <div className="absolute inset-0 bg-amber-900/20" />
             </div>
           </div>
 
