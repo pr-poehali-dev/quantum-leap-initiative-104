@@ -100,7 +100,8 @@ export function Projects() {
   const lightboxProject = lightbox ? projects.find((p) => p.id === lightbox.projectId) : null
 
   return (
-    <section id="projects" className="py-32 md:py-29 bg-secondary/50">
+    <section id="projects" className="py-32 md:py-29 bg-secondary/50 relative">
+      <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>

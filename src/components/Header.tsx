@@ -32,13 +32,7 @@ export function Header() {
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
-        <a href="/" className="flex items-center group" onClick={scrollToTop}>
-          <img
-            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png"
-            alt="ФорТЭК"
-            className={cn("h-9 w-auto object-contain transition-all duration-500", scrolled ? "opacity-100" : "opacity-0 pointer-events-none")}
-          />
-        </a>
+        <a href="/" className="flex items-center group" onClick={scrollToTop} />
 
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
           {[
