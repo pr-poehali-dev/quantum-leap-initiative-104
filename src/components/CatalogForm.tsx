@@ -65,18 +65,18 @@ export function CatalogForm() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/55" />
+        <div className="absolute inset-0 bg-black/35" />
       </div>
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <p className="text-foreground/70 text-sm tracking-[0.3em] uppercase mb-6 font-medium">Каталог</p>
-          <h2 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight mb-6 text-balance drop-shadow-sm">
+          <p className="text-white/70 text-sm tracking-[0.3em] uppercase mb-6 font-medium">Каталог</p>
+          <h2 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight mb-6 text-balance text-white drop-shadow-sm">
             Получите <HighlightedText>каталог</HighlightedText>
             <br />
             типовых домов
           </h2>
-          <p className="text-foreground/80 text-lg leading-relaxed mb-12 max-w-2xl font-medium">
+          <p className="text-white/80 text-lg leading-relaxed mb-12 max-w-2xl font-medium">
             Выберите интересующий материал — мы пришлём подборку готовых проектов с планировками и ценами.
           </p>
 
@@ -88,7 +88,7 @@ export function CatalogForm() {
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-8">
               <div>
-                <p className="text-sm font-medium mb-4 tracking-wide">Выберите материал (можно несколько)</p>
+                <p className="text-sm font-medium mb-4 tracking-wide text-white">Выберите материал (можно несколько)</p>
                 <div className="flex flex-wrap gap-3">
                   {MATERIALS.map((m) => (
                     <button
@@ -97,8 +97,8 @@ export function CatalogForm() {
                       onClick={() => toggleMaterial(m.id)}
                       className={`px-6 py-3 text-sm border-2 font-medium transition-colors duration-200 ${
                         selected.includes(m.id)
-                          ? "bg-foreground text-primary-foreground border-foreground"
-                          : "bg-background/40 text-foreground border-foreground/60 hover:border-foreground"
+                          ? "bg-white text-black border-white"
+                          : "bg-white/10 text-white border-white/60 hover:border-white"
                       }`}
                     >
                       {m.label}
@@ -118,7 +118,7 @@ export function CatalogForm() {
                   required
                   value={form.name}
                   onChange={handleChange}
-                  className="flex-1 border-2 border-foreground/50 px-5 py-4 text-sm bg-background/40 focus:outline-none focus:border-foreground transition-colors placeholder:text-foreground/50 font-medium"
+                  className="flex-1 border-2 border-white/50 px-5 py-4 text-sm bg-white/10 text-white focus:outline-none focus:border-white transition-colors placeholder:text-white/50 font-medium"
                 />
                 <input
                   type="tel"
@@ -127,7 +127,7 @@ export function CatalogForm() {
                   required
                   value={form.phone}
                   onChange={handleChange}
-                  className="flex-1 border-2 border-foreground/50 px-5 py-4 text-sm bg-background/40 focus:outline-none focus:border-foreground transition-colors placeholder:text-foreground/50 font-medium"
+                  className="flex-1 border-2 border-white/50 px-5 py-4 text-sm bg-white/10 text-white focus:outline-none focus:border-white transition-colors placeholder:text-white/50 font-medium"
                 />
               </div>
 
