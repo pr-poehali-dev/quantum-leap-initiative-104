@@ -28,8 +28,14 @@ const projects = [
     category: "Капитальный ремонт помещений",
     location: "г. Бийск",
     year: "2026",
-    image: "/images/hously-2.png",
-    gallery: [],
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/031b70dc-aa49-48fd-a055-765c9f03d875.jpg",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/031b70dc-aa49-48fd-a055-765c9f03d875.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/6f724916-d177-462e-a167-4514292a7c60.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/49912a80-28d1-441a-b0fe-85c7428711fc.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/5745ff81-1780-49f6-aa14-4c5787744e73.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/134ad43a-5460-4599-ba29-bc2f9166544b.jpg",
+    ],
   },
   {
     id: 3,
