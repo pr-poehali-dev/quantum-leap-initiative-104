@@ -7,7 +7,7 @@ const projects = [
     title: "Каркасный дом, СНТ Лидер",
     category: "Классическая каркасная технология",
     location: "Кубовинский сельсовет, Новосибирская область",
-    year: "2024",
+    year: "2026",
     image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/ae49259a-94e3-4d31-816c-7c7bf1bc84d9.jpg",
     gallery: [
       "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/ae49259a-94e3-4d31-816c-7c7bf1bc84d9.jpg",
@@ -27,7 +27,7 @@ const projects = [
     title: "Капитальный ремонт Мясоконсервного завода",
     category: "Капитальный ремонт помещений",
     location: "г. Бийск",
-    year: "2023",
+    year: "2026",
     image: "/images/hously-2.png",
     gallery: [],
   },
