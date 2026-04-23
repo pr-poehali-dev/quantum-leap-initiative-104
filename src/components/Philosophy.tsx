@@ -106,12 +106,10 @@ export function Philosophy() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-24">
           {/* Left column - Title and image */}
-          <div className="lg:sticky lg:top-32 lg:self-start">
+          <div className="lg:self-start">
             <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наш подход</p>
-            <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Строим с
-              <br />
-              <HighlightedText>ответственностью</HighlightedText>
+            <h2 className="text-3xl md:text-4xl font-medium leading-[1.15] tracking-tight mb-6 whitespace-nowrap">
+              Строим с <HighlightedText>ответственностью</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block mt-10 overflow-hidden">
@@ -126,7 +124,7 @@ export function Philosophy() {
           </div>
 
           {/* Right column - Description and Philosophy items */}
-          <div className="space-y-6 lg:pt-48">
+          <div className="space-y-6">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
               Строительство — это не просто стены и кровля. Это дом, в котором будут жить Ваши близкие, или объект, в котором будет расти Ваш бизнес. Мы относимся к каждому проекту именно так.
             </p>
