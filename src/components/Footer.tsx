@@ -6,7 +6,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f4649abd-d574-443c-95e5-4cdcc6ed1bd2.jpg" alt="ФорТЭК" className="h-10 w-auto object-contain" />
+              <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f4649abd-d574-443c-95e5-4cdcc6ed1bd2.jpg" alt="ФорТЭК" className="h-10 w-auto object-contain" style={{mixBlendMode: "screen"}} />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Строительный альянс ФорТЭК — строительство малоэтажных домов и коммерческих объектов. Качество, сроки, надёжность.

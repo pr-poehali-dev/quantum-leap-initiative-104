@@ -106,8 +106,8 @@ export function Hero() {
         }}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
-          <div className="flex justify-center mb-8">
-            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f4649abd-d574-443c-95e5-4cdcc6ed1bd2.jpg" alt="ФорТЭК" className="h-24 w-auto object-contain md:h-32" />
+          <div className="flex justify-center mb-4">
+            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f4649abd-d574-443c-95e5-4cdcc6ed1bd2.jpg" alt="ФорТЭК" className="h-28 w-auto object-contain md:h-40 lg:h-48" style={{mixBlendMode: "screen"}} />
           </div>
 
           <h1 className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl">
