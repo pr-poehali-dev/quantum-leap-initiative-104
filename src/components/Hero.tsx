@@ -89,8 +89,8 @@ export function Hero() {
     <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/5a64c845-8475-4674-8957-f8c3af08021d.jpg"
-          alt="Современный каркасный дом у озера"
+          src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/fd9d4dac-83f2-403e-997d-ba744e1af9a1.jpg"
+          alt="Современный каркасный дом"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/30" />
@@ -106,11 +106,11 @@ export function Hero() {
         }}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-white/70 mb-4">{"Строительный альянс"}</p>
+          <div className="flex justify-center mb-8">
+            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f4649abd-d574-443c-95e5-4cdcc6ed1bd2.jpg" alt="ФорТЭК" className="h-24 w-auto object-contain md:h-32" />
+          </div>
 
           <h1 className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl">
-            {"ФорТЭК"}
-            <br />
             <span className="text-orange-200">{"Строим надёжно"}</span>
           </h1>
         </div>
