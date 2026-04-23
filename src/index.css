@@ -7,11 +7,11 @@
 @layer base {
   :root {
     /* Hously architecture color palette - warm neutrals with charcoal accents */
-    --background: 40 20% 97%;
+    --background: 38 35% 94%;
     --foreground: 30 10% 12%;
-    --card: 40 15% 98%;
+    --card: 38 30% 92%;
     --card-foreground: 30 10% 12%;
-    --popover: 40 15% 98%;
+    --popover: 38 30% 92%;
     --popover-foreground: 30 10% 12%;
     --primary: 35 68% 50%;
     --primary-foreground: 0 0% 100%;
