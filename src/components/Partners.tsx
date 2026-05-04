@@ -4,7 +4,7 @@ const partners = [
   { id: 3, logo: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/a9e11c9e-6cc6-4ca8-8bf1-b19f42f63c1d.png", name: "Лад Дерево", contain: false },
   { id: 4, logo: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f717aa74-f07b-42eb-8883-bfecaa263fec.png", name: "ZIP Монтаж", contain: false },
   { id: 5, logo: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/0a318e09-9208-414c-a455-04c2e4246100.png", name: "FOGEL", contain: true },
-  { id: 6, logo: null, name: "Партнёр 6", contain: false },
+  { id: 6, logo: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/d8ffd38d-6cbd-4a73-9645-da408e4bb7b9.png", name: "Строй-Групп", contain: true },
 ]
 
 export function Partners() {
