@@ -20,10 +20,10 @@ export function Partners() {
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="border border-border bg-secondary/30 aspect-[3/2] flex items-center justify-center p-4"
+              className="border border-border bg-secondary/30 aspect-[3/2] flex items-center justify-center overflow-hidden"
             >
               {partner.logo ? (
-                <img src={partner.logo} alt={partner.name} className="max-w-full max-h-full object-contain" />
+                <img src={partner.logo} alt={partner.name} className="w-full h-full object-cover" />
               ) : (
                 <span className="text-muted-foreground text-sm text-center px-2">{partner.name}</span>
               )}
