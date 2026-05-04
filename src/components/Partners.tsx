@@ -1,10 +1,10 @@
 const partners = [
-  { id: 1, name: "Партнёр 1" },
-  { id: 2, name: "Партнёр 2" },
-  { id: 3, name: "Партнёр 3" },
-  { id: 4, name: "Партнёр 4" },
-  { id: 5, name: "Партнёр 5" },
-  { id: 6, name: "Партнёр 6" },
+  { id: 1, logo: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/d164aa8d-a9c9-47c0-8552-5c5d01c125b2.jpg", name: "Партнёр 1" },
+  { id: 2, logo: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/69d297f7-06f1-4fac-b6a9-9db92ccab68c.jpg", name: "DBA" },
+  { id: 3, logo: null, name: "Партнёр 3" },
+  { id: 4, logo: null, name: "Партнёр 4" },
+  { id: 5, logo: null, name: "Партнёр 5" },
+  { id: 6, logo: null, name: "Партнёр 6" },
 ]
 
 export function Partners() {
@@ -20,9 +20,13 @@ export function Partners() {
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="border border-border bg-secondary/30 aspect-[3/2] flex items-center justify-center"
+              className="border border-border bg-secondary/30 aspect-[3/2] flex items-center justify-center p-4"
             >
-              <span className="text-muted-foreground text-sm text-center px-2">{partner.name}</span>
+              {partner.logo ? (
+                <img src={partner.logo} alt={partner.name} className="max-w-full max-h-full object-contain" />
+              ) : (
+                <span className="text-muted-foreground text-sm text-center px-2">{partner.name}</span>
+              )}
             </div>
           ))}
         </div>
