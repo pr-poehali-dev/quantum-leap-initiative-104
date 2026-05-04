@@ -5,6 +5,7 @@ import { Projects } from "../components/Projects"
 import { Expertise } from "../components/Expertise"
 import { CatalogForm } from "../components/CatalogForm"
 import { Reviews } from "../components/Reviews"
+import { Partners } from "../components/Partners"
 import { FAQ } from "../components/FAQ"
 import { CallToAction } from "../components/CallToAction"
 import { Footer } from "../components/Footer"
@@ -19,6 +20,7 @@ export default function Index() {
       <Expertise />
       <CatalogForm />
       <Reviews />
+      <Partners />
       <FAQ />
       <CallToAction />
       <Footer />
