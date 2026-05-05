@@ -24,6 +24,11 @@ const videos = [
     url: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7a81a681-e94b-4431-8779-6ac5db80dfd3.mp4",
     title: "Видеоотзыв",
   },
+  {
+    id: 6,
+    url: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/56e6528f-0fa4-4cd0-a211-9dca19765bb1.mp4",
+    title: "Видеоотзыв",
+  },
 ]
 
 export function Reviews() {
