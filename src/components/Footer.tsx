@@ -9,7 +9,10 @@ export function Footer() {
               <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="h-10 w-auto object-contain" />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Строительный альянс ФорТЭК — строительство малоэтажных домов и коммерческих объектов. Качество, сроки, надёжность.
+              Строительный альянс ФорТЭК — строительство малоэтажных домов и коммерческих объектов.<br />Качество, сроки, надёжность.
+            </p>
+            <p className="text-muted-foreground text-sm mt-4">
+              г. Новосибирск, ул. Красный проспект, д. 72Б, оф. 7
             </p>
           </div>
 
