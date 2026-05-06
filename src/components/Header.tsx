@@ -67,6 +67,13 @@ export function Header() {
           Связаться
         </a>
 
+        <a
+          href="tel:+79237015317"
+          className="md:hidden text-white text-sm font-medium mr-3 hover:text-[rgb(251,146,60)] transition-colors duration-300"
+        >
+          +7 (923) 701-53-17
+        </a>
+
         <button
           className="md:hidden z-50 transition-colors duration-300 text-white"
           aria-label={mobileMenuOpen ? "Закрыть меню" : "Открыть меню"}
