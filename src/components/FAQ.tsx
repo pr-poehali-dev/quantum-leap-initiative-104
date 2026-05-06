@@ -42,12 +42,12 @@ export function FAQ() {
   }
 
   return (
-    <section id="faq" className="py-20 md:py-29 relative">
+    <section id="faq" className="py-16 md:py-20 relative">
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mb-16">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12">
+        <div className="max-w-3xl mb-10 md:mb-16">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Вопросы</p>
-          <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-7xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-7xl">
             Частые вопросы
           </h2>
         </div>
@@ -57,9 +57,9 @@ export function FAQ() {
             <div key={index} className="border-b border-border">
               <button
                 onClick={() => toggleQuestion(index)}
-                className="w-full py-6 flex items-start justify-between gap-6 text-left group"
+                className="w-full py-5 md:py-6 flex items-start justify-between gap-4 text-left group"
               >
-                <span className="text-lg font-medium text-foreground transition-colors group-hover:text-foreground/70">
+                <span className="text-base md:text-lg font-medium text-foreground transition-colors group-hover:text-foreground/70">
                   {faq.question}
                 </span>
                 <Plus
@@ -74,7 +74,7 @@ export function FAQ() {
                   openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-muted-foreground leading-relaxed pb-6 pr-12">{faq.answer}</p>
+                <p className="text-muted-foreground leading-relaxed pb-5 md:pb-6 pr-4 md:pr-12">{faq.answer}</p>
               </div>
             </div>
           ))}

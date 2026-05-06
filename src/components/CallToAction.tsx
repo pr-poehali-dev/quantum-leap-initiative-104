@@ -33,19 +33,19 @@ export function CallToAction() {
   }
 
   return (
-    <section id="contact" className="py-32 md:py-29 bg-foreground text-primary-foreground relative">
+    <section id="contact" className="py-20 md:py-32 bg-foreground text-primary-foreground relative">
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-primary-foreground/60 text-sm tracking-[0.3em] uppercase mb-8">Начать проект</p>
+          <p className="text-primary-foreground/60 text-sm tracking-[0.3em] uppercase mb-6 md:mb-8">Начать проект</p>
 
-          <h2 className="text-4xl md:text-6xl lg:text-8xl font-medium leading-[1.1] tracking-tight mb-8 text-balance">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-medium leading-[1.1] tracking-tight mb-6 md:mb-8 text-balance">
             Мы <HighlightedText>готовы</HighlightedText>,
             <br />
             а Вы?
           </h2>
 
-          <p className="text-primary-foreground/70 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/70 text-base md:text-lg lg:text-xl leading-relaxed mb-8 md:mb-12 max-w-2xl mx-auto">
             Оставьте заявку — мы свяжемся с Вами, предложим варианты, обсудим проект и подготовим расчёт бесплатно.
           </p>
 

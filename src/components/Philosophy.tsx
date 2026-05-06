@@ -101,14 +101,14 @@ export function Philosophy() {
   }, [])
 
   return (
-    <section id="about" className="py-32 md:py-29 relative">
+    <section id="about" className="py-20 md:py-32 relative">
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-24">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 mb-16 md:mb-24">
           {/* Left column - Title and image */}
           <div className="lg:self-start">
             <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наш подход</p>
-            <h2 className="text-3xl md:text-4xl font-medium leading-[1.15] tracking-tight mb-6 whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium leading-[1.15] tracking-tight mb-6">
               Строим с <HighlightedText>ответственностью</HighlightedText>
             </h2>
 
@@ -125,7 +125,7 @@ export function Philosophy() {
 
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6">
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-md mb-8 md:mb-12">
               Строительство — это не просто стены и кровля. Это дом, в котором будут жить Ваши близкие, или объект, в котором будет расти Ваш бизнес. Мы относимся к каждому проекту именно так.
             </p>
 
@@ -156,10 +156,10 @@ export function Philosophy() {
         {/* Building technologies block */}
         <div>
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Технологии строительства</p>
-          <h3 className="text-3xl md:text-4xl font-medium tracking-tight mb-12">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight mb-8 md:mb-12">
             Строим из того, что <HighlightedText>подходит Вам</HighlightedText>
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 md:gap-y-10">
             {buildingTypes.map((type, index) => (
               <div
                 key={type.title}

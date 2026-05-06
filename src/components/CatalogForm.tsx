@@ -58,7 +58,7 @@ export function CatalogForm() {
   }
 
   return (
-    <section id="catalog" className="py-32 md:py-29 relative overflow-hidden">
+    <section id="catalog" className="py-20 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/26514fa2-c594-4e25-b50f-96f695061f85.jpeg"
@@ -69,15 +69,15 @@ export function CatalogForm() {
         <div className="absolute inset-0 bg-amber-900/20" />
       </div>
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
-      <div className="container mx-auto px-6 md:px-12 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto">
           <p className="text-white/70 text-sm tracking-[0.3em] uppercase mb-6 font-medium">Каталог</p>
-          <h2 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight mb-6 text-balance text-white drop-shadow-sm">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight mb-6 text-balance text-white drop-shadow-sm">
             Получите <HighlightedText>каталог</HighlightedText>
             <br />
             типовых домов
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-12 max-w-2xl font-medium">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8 md:mb-12 max-w-2xl font-medium">
             Выберите интересующий материал — мы пришлём подборку готовых проектов с планировками и ценами.
           </p>
 

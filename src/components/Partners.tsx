@@ -14,14 +14,14 @@ const partners = [
 
 export function Partners() {
   return (
-    <section id="partners" className="py-20 bg-background">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="mb-16">
+    <section id="partners" className="py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12">
+        <div className="mb-10 md:mb-16">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Работаем вместе</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наши партнёры</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наши партнёры</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
           {partners.map((partner) => (
             <div
               key={partner.id}
