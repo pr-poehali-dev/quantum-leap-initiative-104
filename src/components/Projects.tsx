@@ -67,6 +67,20 @@ const projects = [
     image: "/images/hously-4.png",
     gallery: [],
   },
+  {
+    id: 5,
+    title: "Кирпичный 2-х этажный дом",
+    category: "Кирпичное строительство",
+    location: "с. Ленинское, Новосибирская область",
+    year: "2024",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f8c59bd9-8c9d-401b-9676-6784e9df99d9.jpg",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f8c59bd9-8c9d-401b-9676-6784e9df99d9.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/4bcf3eea-144f-4fca-99a0-8793f527b396.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/3b2ad557-81f9-45c1-9444-d0fd61a15324.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/d74a6dea-50b0-42c3-9357-09321e1b6d93.jpg",
+    ],
+  },
 ]
 
 export function Projects() {
