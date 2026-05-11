@@ -60,12 +60,18 @@ const projects = [
   },
   {
     id: 4,
-    title: "Реконструкция бизнес-центра",
-    category: "Реконструкция",
-    location: "Москва",
+    title: "Каркасный дом, СНТ Лазурный берег",
+    category: "Классическая каркасная технология",
+    location: "Новосибирская область",
     year: "2024",
-    image: "/images/hously-4.png",
-    gallery: [],
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/aecb91e9-a0b1-4b9a-a764-c0073fd6ab2d.jpg",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/aecb91e9-a0b1-4b9a-a764-c0073fd6ab2d.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/252c5e06-e461-4999-b1f3-08b9fe982816.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f8a9b7a2-965f-471e-9336-05df9f32f571.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/541ce8f9-161e-4b87-b29c-2bb8d24a0a28.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/16a4c5f8-c2db-4f12-9e0e-6a284f45ca5f.jpg",
+    ],
   },
   {
     id: 5,
