@@ -71,7 +71,7 @@ export function Header() {
           href="tel:+79237015317"
           className="md:hidden text-white text-sm font-medium mr-3 hover:text-[rgb(251,146,60)] transition-colors duration-300"
         >
-          +7 (923) 701-53-17
+          Позвонить
         </a>
 
         <button
