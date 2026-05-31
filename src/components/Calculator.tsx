@@ -110,7 +110,7 @@ export function Calculator() {
           <div className="mb-10 md:mb-14">
             <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Быстрый расчёт</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight leading-[1.15]">
-              Узнайте <HighlightedText>стоимость</HighlightedText> вашего дома
+              Узнайте <HighlightedText>стоимость</HighlightedText> Вашего дома
             </h2>
             <p className="text-muted-foreground mt-4 text-base leading-relaxed">
               Ответьте на 4 вопроса — мы подготовим персональный расчёт и свяжемся с вами.
