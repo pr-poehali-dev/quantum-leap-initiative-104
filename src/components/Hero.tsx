@@ -93,7 +93,10 @@ export function Hero() {
           alt="Современный каркасный дом"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/55" />
+        {/* Базовое затемнение */}
+        <div className="absolute inset-0 bg-black/40" />
+        {/* Слой смены освещения суток */}
+        <div className="absolute inset-0 animate-daylight" />
       </div>
 
       <div
