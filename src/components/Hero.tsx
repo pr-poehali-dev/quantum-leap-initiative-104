@@ -30,13 +30,15 @@ export function Hero() {
 
     const tick = (now: number) => {
       const elapsed = (now - start) % CYCLE_DURATION
-      const progress = elapsed / CYCLE_DURATION // 0..1
+      const progress = Math.min(elapsed / CYCLE_DURATION, 0.9999)
       const totalSteps = TIMES.length
       const stepF = progress * totalSteps
       const stepIndex = Math.floor(stepF) % totalSteps
       const nextIndex = (stepIndex + 1) % totalSteps
       const t = stepF - Math.floor(stepF)
-      const [r, g, b, a] = lerpColor(TIMES[stepIndex].color, TIMES[nextIndex].color, t)
+      const from = TIMES[stepIndex]?.color ?? TIMES[0].color
+      const to = TIMES[nextIndex]?.color ?? TIMES[0].color
+      const [r, g, b, a] = lerpColor(from, to, t)
       setOverlayColor(`rgba(${Math.round(r)},${Math.round(g)},${Math.round(b)},${a.toFixed(2)})`)
       raf = requestAnimationFrame(tick)
     }
