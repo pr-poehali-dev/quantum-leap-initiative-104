@@ -87,6 +87,20 @@ const projects = [
       "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/d74a6dea-50b0-42c3-9357-09321e1b6d93.jpg",
     ],
   },
+  {
+    id: 6,
+    title: "Каркасный дом, п. Агролес",
+    category: "Классическая каркасная технология",
+    location: "Искитимский район, Новосибирская область",
+    year: "2025",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/aebd0850-435d-4987-8536-1e01e226ae3a.png",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/aebd0850-435d-4987-8536-1e01e226ae3a.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/50da7c3a-831a-4c55-a904-e816189644f0.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/abfbdb8a-b511-4fdc-9f41-065433983c59.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/e91eb0d1-38dd-4ab4-b4cd-1f90a1f4baf8.png",
+    ],
+  },
 ]
 
 export function Projects() {
