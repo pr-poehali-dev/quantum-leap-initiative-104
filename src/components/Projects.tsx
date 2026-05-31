@@ -93,8 +93,12 @@ const projects = [
     category: "Классическая каркасная технология",
     location: "Искитимский район, Новосибирская область",
     year: "2025",
-    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/aebd0850-435d-4987-8536-1e01e226ae3a.png",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/0b9eee0b-d0c3-4915-b987-50449e88825d.jpg",
     gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/0b9eee0b-d0c3-4915-b987-50449e88825d.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/0890e890-46d3-4d4b-a544-11aaac279beb.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/b1bb99c1-3a1b-477b-96ca-274ae5ae92b1.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/e504944d-e580-424f-a670-eb3b3036a60c.jpg",
       "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/aebd0850-435d-4987-8536-1e01e226ae3a.png",
       "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/50da7c3a-831a-4c55-a904-e816189644f0.png",
       "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/abfbdb8a-b511-4fdc-9f41-065433983c59.png",
