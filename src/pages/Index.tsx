@@ -11,6 +11,7 @@ import { FAQ } from "../components/FAQ"
 import { CallToAction } from "../components/CallToAction"
 import { Footer } from "../components/Footer"
 import { ReadyHomes } from "../components/ReadyHomes"
+import { Calculator } from "../components/Calculator"
 import Icon from "@/components/ui/icon"
 
 export default function Index() {
@@ -36,6 +37,7 @@ export default function Index() {
       <Projects />
       <Expertise />
       <CatalogForm />
+      <Calculator />
       <ReadyHomes />
       <Reviews />
       <Partners />
