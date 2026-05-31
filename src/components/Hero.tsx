@@ -140,7 +140,7 @@ export function Hero() {
 
       <div
         ref={contentRef}
-        className="container mx-auto px-6 md:px-12 lg:pt-0 relative z-10 pb-0 pl-1 pr-1 pt-8 md:pt-0"
+        className="container mx-auto px-4 md:px-12 lg:pt-0 relative z-10 pb-0 pt-8 md:pt-0"
         style={{
           willChange: "transform, opacity",
           transform: "translateY(0px)",
@@ -148,12 +148,12 @@ export function Hero() {
         }}
       >
         <div className="mb-40 sm:mb-60 md:mb-72 lg:mb-96">
-          <div className="flex justify-center mb-1">
-            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png" alt="ФорТЭК" className="h-20 w-auto object-contain sm:h-28 md:h-40 lg:h-48" />
+          <div className="flex justify-center mb-3">
+            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png" alt="ФорТЭК" className="h-28 w-auto object-contain sm:h-28 md:h-40 lg:h-48" />
           </div>
 
-          <h1 className="text-5xl sm:text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl">
-            <span className="text-orange-200 inline-flex flex-wrap justify-center">
+          <h1 className="text-4xl sm:text-7xl font-medium text-center text-white mb-0 tracking-tight leading-tight lg:text-8xl whitespace-nowrap">
+            <span className="text-orange-200 inline-flex justify-center">
               {"Строим надёжно".split("").map((char, i) => (
                 <span
                   key={i}
