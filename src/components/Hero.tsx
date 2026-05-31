@@ -111,7 +111,20 @@ export function Hero() {
           </div>
 
           <h1 className="text-5xl sm:text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl">
-            <span className="text-orange-200">{"Строим надёжно"}</span>
+            <span className="text-orange-200 inline-flex flex-wrap justify-center">
+              {"Строим надёжно".split("").map((char, i) => (
+                <span
+                  key={i}
+                  className="inline-block animate-wave"
+                  style={{
+                    animationDelay: `${i * 0.07}s`,
+                    whiteSpace: char === " " ? "pre" : "normal",
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
+            </span>
           </h1>
         </div>
       </div>
