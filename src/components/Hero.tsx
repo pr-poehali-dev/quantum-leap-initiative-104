@@ -1,12 +1,49 @@
 import { useEffect, useRef, useState } from "react"
 import { ArrowDown } from "lucide-react"
 
+// Времена суток: [r, g, b, opacity]
+const TIMES = [
+  { color: [160, 60, 10, 0.60] },   // рассвет — тёмно-оранжевый
+  { color: [210, 130, 50, 0.30] },  // утро — золотистый светлый
+  { color: [80, 140, 210, 0.15] },  // день — голубой прозрачный
+  { color: [200, 80, 10, 0.55] },   // закат — алый
+  { color: [40, 10, 70, 0.70] },    // сумерки — фиолетовый
+  { color: [5, 5, 25, 0.82] },      // ночь — тёмно-синий
+]
+const CYCLE_DURATION = 60000 // 60 секунд полный цикл
+
+function lerpColor(a: number[], b: number[], t: number) {
+  return a.map((v, i) => v + (b[i] - v) * t)
+}
+
 export function Hero() {
   const contentRef = useRef<HTMLDivElement>(null)
   const heroRef = useRef<HTMLElement>(null)
   const [animationComplete, setAnimationComplete] = useState(false)
   const accumulatedScrollRef = useRef(0)
   const lastTouchY = useRef<number>(0)
+  const [overlayColor, setOverlayColor] = useState("rgba(160,60,10,0.60)")
+
+  useEffect(() => {
+    let raf: number
+    const start = performance.now()
+
+    const tick = (now: number) => {
+      const elapsed = (now - start) % CYCLE_DURATION
+      const progress = elapsed / CYCLE_DURATION // 0..1
+      const totalSteps = TIMES.length
+      const stepF = progress * totalSteps
+      const stepIndex = Math.floor(stepF) % totalSteps
+      const nextIndex = (stepIndex + 1) % totalSteps
+      const t = stepF - Math.floor(stepF)
+      const [r, g, b, a] = lerpColor(TIMES[stepIndex].color, TIMES[nextIndex].color, t)
+      setOverlayColor(`rgba(${Math.round(r)},${Math.round(g)},${Math.round(b)},${a.toFixed(2)})`)
+      raf = requestAnimationFrame(tick)
+    }
+
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [])
 
   const applyProgress = (progress: number) => {
     if (contentRef.current) {
@@ -94,9 +131,9 @@ export function Hero() {
           className="w-full h-full object-cover object-center"
         />
         {/* Базовое затемнение */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/35" />
         {/* Слой смены освещения суток */}
-        <div className="absolute inset-0 animate-daylight" />
+        <div className="absolute inset-0" style={{ backgroundColor: overlayColor }} />
       </div>
 
       <div
