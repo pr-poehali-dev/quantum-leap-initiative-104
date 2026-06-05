@@ -6,7 +6,7 @@ export function Ambassador() {
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
             {/* Photo */}
             <div className="shrink-0 flex flex-col items-center">
-              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[rgb(251,146,60)]/20">
+              <div className="w-56 h-72 md:w-72 md:h-96 overflow-hidden border-4 border-[rgb(251,146,60)]/20">
                 <img
                   src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/b137569b-f1f4-4af2-810d-f921af6c4540.jpg"
                   alt="Юлия Судакова"
