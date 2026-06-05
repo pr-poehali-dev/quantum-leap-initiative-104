@@ -18,7 +18,7 @@ export function Ambassador() {
             <div>
               <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Обращение руководства</p>
 
-              <blockquote className="space-y-4 text-base md:text-lg leading-relaxed text-foreground/90">
+              <blockquote className="space-y-4 text-base md:text-lg leading-relaxed text-foreground/90 text-justify">
                 <p>От лица Строительного Альянса «ФорТЭК» я приветствую Вас на нашем сайте.</p>
                 <p>
                   В современном мире, где требования к качеству, скорости и безопасности строительства постоянно растут,
