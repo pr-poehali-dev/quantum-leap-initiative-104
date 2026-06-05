@@ -4,9 +4,15 @@ export function Ambassador() {
       <div className="container mx-auto px-4 sm:px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
-            {/* Quote mark */}
-            <div className="hidden md:block shrink-0">
-              <span className="text-[120px] leading-none text-[rgb(251,146,60)] opacity-30 font-serif select-none">"</span>
+            {/* Photo */}
+            <div className="shrink-0 flex flex-col items-center">
+              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[rgb(251,146,60)]/20">
+                <img
+                  src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/b137569b-f1f4-4af2-810d-f921af6c4540.jpg"
+                  alt="Юлия Судакова"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
 
             <div>
