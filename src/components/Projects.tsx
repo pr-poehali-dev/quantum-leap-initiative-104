@@ -31,6 +31,21 @@ const projects = [
     ],
   },
   {
+    id: 7,
+    title: "Каркасный 2-х этажный дом, п.Агролес",
+    category: "Классическая каркасная технология",
+    location: "Искитимский район, Новосибирская область",
+    year: "2025",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/ab31d3f7-dcfa-49bf-a643-1a9ac33dfbf6.jpg",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/ab31d3f7-dcfa-49bf-a643-1a9ac33dfbf6.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/0e48a591-3277-477e-8a27-d3e0742551bf.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/5dc5e8e0-b562-49b3-b0f4-2dfbeb313c62.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/87b0cf7f-b989-496d-baac-4191e29630f7.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/529bb2f3-f1ad-40e3-acf6-2f96203302a9.jpg",
+    ],
+  },
+  {
     id: 2,
     title: "Капитальный ремонт Мясоконсервного завода",
     category: "Капитальный ремонт помещений",
