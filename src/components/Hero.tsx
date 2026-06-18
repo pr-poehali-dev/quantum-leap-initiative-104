@@ -105,12 +105,12 @@ export function Hero() {
           opacity: 1,
         }}
       >
-        <div className="mb-40 sm:mb-60 md:mb-72 lg:mb-96">
+        <div className="mb-20 sm:mb-40 md:mb-60 lg:mb-96">
           <div className="flex justify-center mb-3">
-            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png" alt="ФорТЭК" className="h-28 w-auto object-contain sm:h-28 md:h-40 lg:h-48" />
+            <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/7c02c37b-0628-48a0-889b-71c9f1738e91.png" alt="ФорТЭК" className="h-20 w-auto object-contain sm:h-28 md:h-40 lg:h-48" />
           </div>
 
-          <h1 className="text-4xl sm:text-7xl font-medium text-center text-white mb-0 tracking-tight leading-tight lg:text-8xl whitespace-nowrap">
+          <h1 className="text-4xl sm:text-7xl font-medium text-center text-white mb-0 tracking-tight leading-tight lg:text-8xl">
             <span className="text-orange-200 inline-flex justify-center">
               {"Строим надёжно".split("").map((char, i) => (
                 <span

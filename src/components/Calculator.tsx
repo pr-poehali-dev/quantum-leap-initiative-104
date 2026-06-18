@@ -206,7 +206,7 @@ export function Calculator() {
               {step === "floors" && (
                 <div>
                   <h3 className="text-lg font-medium mb-6">Количество этажей</h3>
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     {FLOORS.map((f) => (
                       <button
                         key={f.id}

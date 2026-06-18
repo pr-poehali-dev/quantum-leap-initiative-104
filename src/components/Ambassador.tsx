@@ -3,10 +3,10 @@ export function Ambassador() {
     <section className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-start">
             {/* Photo */}
-            <div className="shrink-0 flex flex-col items-center">
-              <div className="w-56 h-72 md:w-72 md:h-96 overflow-hidden border-4 border-[rgb(251,146,60)]/20">
+            <div className="shrink-0 flex flex-col items-center mx-auto md:mx-0">
+              <div className="w-40 h-52 sm:w-56 sm:h-72 md:w-72 md:h-96 overflow-hidden border-4 border-[rgb(251,146,60)]/20">
                 <img
                   src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/b137569b-f1f4-4af2-810d-f921af6c4540.jpg"
                   alt="Юлия Судакова"

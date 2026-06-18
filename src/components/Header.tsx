@@ -31,7 +31,7 @@ export function Header() {
           : "bg-transparent py-4 top-0 left-0 right-0",
       )}
     >
-      <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
+      <nav className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="/" className="flex items-center group" onClick={scrollToTop} />
 
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
@@ -98,7 +98,7 @@ export function Header() {
       <div
         className={cn(
           "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-          mobileMenuOpen ? "max-h-[600px] opacity-100 mt-8" : "max-h-0 opacity-0",
+          mobileMenuOpen ? "max-h-[80vh] opacity-100 mt-6 overflow-y-auto" : "max-h-0 opacity-0",
         )}
       >
         <div className="container mx-auto px-6">
@@ -117,7 +117,7 @@ export function Header() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-4xl font-light block"
+                  className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-2xl sm:text-3xl font-light block"
                   onClick={closeMobileMenu}
                 >
                   {item.label}

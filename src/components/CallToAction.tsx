@@ -39,7 +39,7 @@ export function CallToAction() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-primary-foreground/60 text-sm tracking-[0.3em] uppercase mb-6 md:mb-8">Начать проект</p>
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-medium leading-[1.1] tracking-tight mb-6 md:mb-8 text-balance">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-medium leading-[1.1] tracking-tight mb-6 md:mb-8 text-balance">
             Мы <HighlightedText>готовы</HighlightedText>,
             <br />
             а Вы?

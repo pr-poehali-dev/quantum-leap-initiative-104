@@ -6,11 +6,11 @@ export function PromoJune() {
           <img
             src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/8fd31823-f786-44ef-a3b8-e71c037c1d40.png"
             alt="Комплект садовой мебели"
-            className="w-full h-[420px] md:h-[480px] object-cover object-center"
+            className="w-full h-[280px] sm:h-[360px] md:h-[420px] lg:h-[480px] object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/10" />
           <div className="absolute inset-0 flex items-center">
-            <div className="px-8 md:px-14 max-w-xl">
+            <div className="px-4 sm:px-8 md:px-14 max-w-xl">
               <div className="inline-block bg-primary text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                 Супер-акция — ИЮНЬ
               </div>

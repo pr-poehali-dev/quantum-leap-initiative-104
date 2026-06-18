@@ -104,7 +104,7 @@ export function Philosophy() {
     <section id="about" className="py-20 md:py-32 relative">
       <img src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/2c465510-4bb0-4999-a218-666f97958796.png" alt="ФорТЭК" className="absolute top-6 left-6 h-10 w-auto object-contain opacity-60 z-10" />
       <div className="container mx-auto px-4 sm:px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 mb-16 md:mb-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 mb-16 md:mb-24">
           {/* Left column - Title and image */}
           <div className="lg:self-start">
             <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наш подход</p>
