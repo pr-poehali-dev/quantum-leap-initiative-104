@@ -57,6 +57,21 @@ const projects = [
     ],
   },
   {
+    id: 8,
+    title: "Каркасный дом-баня",
+    category: "Классическая каркасная технология",
+    location: "Новосибирский район, Новосибирская область",
+    year: "2025",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/adcd4d7c-9576-4e84-8c63-b396482b4116.jpg",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/adcd4d7c-9576-4e84-8c63-b396482b4116.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f0645dbc-eff3-4000-9022-e340179cd553.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/47294966-26e0-4acd-ae9b-11469d8a5b5d.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/5024ebd9-9dc5-432f-9321-98726319603e.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/330927bd-768d-4174-90a3-af3549068017.jpg",
+    ],
+  },
+  {
     id: 2,
     title: "Капитальный ремонт Мясоконсервного завода",
     category: "Капитальный ремонт помещений",
