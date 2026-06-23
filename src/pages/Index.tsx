@@ -14,6 +14,7 @@ import { CallToAction } from "../components/CallToAction"
 import { Footer } from "../components/Footer"
 import { ReadyHomes } from "../components/ReadyHomes"
 import { Calculator } from "../components/Calculator"
+import { VeniceVillage } from "../components/VeniceVillage"
 import Icon from "@/components/ui/icon"
 
 export default function Index() {
@@ -37,6 +38,7 @@ export default function Index() {
       <Hero />
       <PromoJune />
       <Ambassador />
+      <VeniceVillage />
       <Philosophy />
       <Projects />
       <Expertise />
