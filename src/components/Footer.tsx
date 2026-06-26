@@ -72,15 +72,18 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-3 md:gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Строительный альянс ФорТЭК. Все права защищены.</p>
-          <div className="flex flex-wrap gap-4 md:gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">
-              Политика конфиденциальности
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Условия использования
-            </a>
+        <div className="pt-6 md:pt-8 border-t border-border flex flex-col gap-3 text-sm text-muted-foreground">
+          <p>ИП Иванников А.В. · ОГРНИП 324547600078501 · ИНН 540805152661</p>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 md:gap-4">
+            <p>© 2025 Строительный альянс ФорТЭК. Все права защищены.</p>
+            <div className="flex flex-wrap gap-4 md:gap-6">
+              <a href="#" className="hover:text-foreground transition-colors">
+                Политика конфиденциальности
+              </a>
+              <a href="#" className="hover:text-foreground transition-colors">
+                Условия использования
+              </a>
+            </div>
           </div>
         </div>
       </div>
