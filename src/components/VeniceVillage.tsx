@@ -8,7 +8,7 @@ export function VeniceVillage() {
       <div className="absolute inset-0 bg-background/35" />
       <div className="relative container mx-auto px-4 sm:px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4 text-center">
+          <p className="text-primary font-bold text-sm tracking-[0.3em] uppercase mb-4 text-center">
             Эксклюзивная продажа
           </p>
           <img
@@ -16,7 +16,7 @@ export function VeniceVillage() {
             alt="Коттеджный поселок Сибирская Венеция"
             className="w-full max-w-2xl mx-auto mb-4 object-contain"
           />
-          <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-primary font-bold text-lg mb-12 max-w-2xl mx-auto">
             Участки с возможностью строительства дома для круглогодичного проживания
           </p>
 
