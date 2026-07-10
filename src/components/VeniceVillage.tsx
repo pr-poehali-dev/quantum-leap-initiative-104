@@ -16,7 +16,7 @@ export function VeniceVillage() {
             alt="Коттеджный поселок Сибирская Венеция"
             className="w-full max-w-2xl mx-auto mb-4 object-contain"
           />
-          <p className="text-center text-primary font-bold text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#023643] font-bold text-lg mb-12 max-w-2xl mx-auto">
             Участки с возможностью строительства дома для круглогодичного проживания
           </p>
 
