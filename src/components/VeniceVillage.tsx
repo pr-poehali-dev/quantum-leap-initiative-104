@@ -7,9 +7,9 @@ export function VeniceVillage() {
             Эксклюзивная продажа
           </p>
           <img
-            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/1c4ae944-d76d-4193-9a65-e64c84888e7c.jpg"
+            src="/logo-venice.png"
             alt="Коттеджный поселок Сибирская Венеция"
-            className="w-full max-w-md mx-auto mb-4 object-contain"
+            className="w-full max-w-2xl mx-auto mb-4 object-contain"
           />
           <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
             Участки с возможностью строительства дома для круглогодичного проживания
