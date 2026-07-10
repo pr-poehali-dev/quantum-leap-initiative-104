@@ -5,7 +5,7 @@ export function VeniceVillage() {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/4c8eee7e-241c-4538-b6fb-705490a228b9.jpg')" }}
       />
-      <div className="absolute inset-0 bg-background/60" />
+      <div className="absolute inset-0 bg-background/35" />
       <div className="relative container mx-auto px-4 sm:px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4 text-center">
