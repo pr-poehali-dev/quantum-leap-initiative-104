@@ -6,10 +6,11 @@ export function VeniceVillage() {
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4 text-center">
             Эксклюзивная продажа
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 leading-tight">
-            Коттеджный поселок<br />
-            <span className="text-primary">Сибирская Венеция</span>
-          </h2>
+          <img
+            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/1c4ae944-d76d-4193-9a65-e64c84888e7c.jpg"
+            alt="Коттеджный поселок Сибирская Венеция"
+            className="w-full max-w-md mx-auto mb-4 object-contain"
+          />
           <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
             Участки с возможностью строительства дома для круглогодичного проживания
           </p>
