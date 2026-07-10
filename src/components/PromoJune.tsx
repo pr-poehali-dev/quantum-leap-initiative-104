@@ -12,10 +12,10 @@ export function PromoJune() {
           <div className="absolute inset-0 flex items-center">
             <div className="px-4 sm:px-8 md:px-14 max-w-xl">
               <div className="inline-block bg-primary text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
-                Супер-акция — ИЮНЬ
+                Супер-акция — ИЮЛЬ
               </div>
               <p className="text-white/90 text-base md:text-lg leading-relaxed mb-5">
-                Только в <span className="text-primary font-semibold">июне 2026 г.</span> при заключении договора подряда на строительство индивидуального жилого дома
+                Только в <span className="text-primary font-semibold">июле 2026 г.</span> при заключении договора подряда на строительство индивидуального жилого дома
               </p>
               <p className="text-white text-2xl md:text-3xl font-bold leading-tight mb-2">
                 дарим ПОДАРОК!
