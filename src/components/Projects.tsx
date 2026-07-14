@@ -3,6 +3,21 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react"
 
 const projects = [
   {
+    id: 9,
+    title: "Модульная баня неповторимого дизайна, ручная работа",
+    category: "Модульное строительство",
+    location: "Кемеровская область",
+    year: "2026",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f8fb691b-708e-420d-ad7e-44bfd881cb5f.jpg",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/f8fb691b-708e-420d-ad7e-44bfd881cb5f.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/e06c5c9f-22f1-4f4f-a54f-8490d3f4e05c.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/fdfc65f1-d3a0-44b5-aeca-18689916c7b1.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/82327a09-f829-4a40-8ba0-f607c1fb88f5.jpg",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/58d6bbd8-ee0f-4d44-84d2-0998083c1328.jpg",
+    ],
+  },
+  {
     id: 1,
     title: "Каркасный дом, СНТ Лидер",
     category: "Классическая каркасная технология",
