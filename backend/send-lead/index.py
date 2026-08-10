@@ -3,10 +3,27 @@ import os
 import urllib.request
 import urllib.parse
 import urllib.error
+import psycopg2
+
+
+def save_lead(name: str, phone: str, message: str, telegram_sent: bool) -> None:
+    dsn = os.environ['DATABASE_URL']
+    schema = os.environ.get('MAIN_DB_SCHEMA', 'public')
+    conn = psycopg2.connect(dsn)
+    try:
+        cur = conn.cursor()
+        cur.execute(
+            f"INSERT INTO {schema}.leads (name, phone, message, telegram_sent) VALUES (%s, %s, %s, %s)",
+            (name, phone, message, telegram_sent)
+        )
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
 
 
 def handler(event: dict, context) -> dict:
-    """Принимает заявку с сайта и отправляет уведомление в Telegram"""
+    """Принимает заявку с сайта, сохраняет её в базу и отправляет уведомление в Telegram"""
 
     if event.get('httpMethod') == 'OPTIONS':
         return {
@@ -55,21 +72,29 @@ def handler(event: dict, context) -> dict:
         method='POST'
     )
 
+    telegram_sent = True
+    telegram_error = None
     try:
         with urllib.request.urlopen(req, timeout=8) as resp:
             resp.read()
-    except urllib.error.HTTPError as e:
-        error_body = e.read().decode('utf-8', errors='ignore')
-        return {
-            'statusCode': 502,
-            'headers': {'Access-Control-Allow-Origin': '*'},
-            'body': json.dumps({'error': 'Telegram API error', 'details': error_body})
-        }
+    except Exception as e:
+        telegram_sent = False
+        telegram_error = str(e)
+
+    try:
+        save_lead(name, phone, message, telegram_sent)
     except Exception as e:
         return {
             'statusCode': 502,
             'headers': {'Access-Control-Allow-Origin': '*'},
-            'body': json.dumps({'error': 'Не удалось отправить в Telegram', 'details': str(e)})
+            'body': json.dumps({'error': 'Не удалось сохранить заявку', 'details': str(e)})
+        }
+
+    if not telegram_sent:
+        return {
+            'statusCode': 200,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'success': True, 'telegram_error': telegram_error})
         }
 
     return {
