@@ -2,6 +2,7 @@ import json
 import os
 import urllib.request
 import urllib.parse
+import urllib.error
 
 
 def handler(event: dict, context) -> dict:
@@ -53,7 +54,23 @@ def handler(event: dict, context) -> dict:
         data=data,
         method='POST'
     )
-    urllib.request.urlopen(req)
+
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            resp.read()
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode('utf-8', errors='ignore')
+        return {
+            'statusCode': 502,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'error': 'Telegram API error', 'details': error_body})
+        }
+    except Exception as e:
+        return {
+            'statusCode': 502,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'error': 'Не удалось отправить в Telegram', 'details': str(e)})
+        }
 
     return {
         'statusCode': 200,
