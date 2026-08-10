@@ -1,12 +1,12 @@
 import json
 import os
-import urllib.request
-import urllib.parse
-import urllib.error
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 
 def handler(event: dict, context) -> dict:
-    """Принимает заявку с сайта и отправляет уведомление в Telegram"""
+    """Принимает заявку с сайта и отправляет уведомление на email"""
 
     if event.get('httpMethod') == 'OPTIONS':
         return {
@@ -32,44 +32,33 @@ def handler(event: dict, context) -> dict:
             'body': json.dumps({'error': 'Имя и телефон обязательны'})
         }
 
-    token = os.environ['TELEGRAM_BOT_TOKEN']
-    chat_id = os.environ['TELEGRAM_CHAT_ID']
+    smtp_email = os.environ['SMTP_EMAIL']
+    smtp_password = os.environ['SMTP_PASSWORD']
+    to_email = 'fortek.info@mail.ru'
 
     text = (
-        f"📋 *Новая заявка с сайта ФорТЭК*\n\n"
-        f"👤 *Имя:* {name}\n"
-        f"📞 *Телефон:* {phone}\n"
+        f"Новая заявка с сайта ФорТЭК\n\n"
+        f"Имя: {name}\n"
+        f"Телефон: {phone}\n"
     )
     if message:
-        text += f"💬 *Сообщение:* {message}\n"
+        text += f"Сообщение: {message}\n"
 
-    data = urllib.parse.urlencode({
-        'chat_id': chat_id,
-        'text': text,
-        'parse_mode': 'Markdown'
-    }).encode()
-
-    req = urllib.request.Request(
-        f'https://api.telegram.org/bot{token}/sendMessage',
-        data=data,
-        method='POST'
-    )
+    msg = MIMEMultipart()
+    msg['From'] = smtp_email
+    msg['To'] = to_email
+    msg['Subject'] = f'Новая заявка с сайта ФорТЭК от {name}'
+    msg.attach(MIMEText(text, 'plain', 'utf-8'))
 
     try:
-        with urllib.request.urlopen(req, timeout=8) as resp:
-            resp.read()
-    except urllib.error.HTTPError as e:
-        error_body = e.read().decode('utf-8', errors='ignore')
-        return {
-            'statusCode': 502,
-            'headers': {'Access-Control-Allow-Origin': '*'},
-            'body': json.dumps({'error': 'Telegram API error', 'details': error_body})
-        }
+        with smtplib.SMTP_SSL('smtp.mail.ru', 465, timeout=8) as server:
+            server.login(smtp_email, smtp_password)
+            server.sendmail(smtp_email, [to_email], msg.as_string())
     except Exception as e:
         return {
             'statusCode': 502,
             'headers': {'Access-Control-Allow-Origin': '*'},
-            'body': json.dumps({'error': 'Не удалось отправить в Telegram', 'details': str(e)})
+            'body': json.dumps({'error': 'Не удалось отправить письмо', 'details': str(e)})
         }
 
     return {
