@@ -1,3 +1,5 @@
+import snowblower from "@/assets/snowblower.png"
+
 export function PromoJune() {
   return (
     <section className="py-12 px-4 bg-secondary/40">
@@ -6,16 +8,16 @@ export function PromoJune() {
           <img
             src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/files/6c94686f-1c3c-4cab-819f-7a86d6172209.jpg"
             alt="Акция Осень — готовимся к зиме"
-            className="w-full h-[280px] sm:h-[360px] md:h-[420px] lg:h-[480px] object-cover object-center"
+            className="w-full h-[320px] sm:h-[380px] md:h-[440px] lg:h-[480px] object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/15 md:to-black/20" />
           <img
-            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/59fbc0fb-18fa-4acd-918c-b4a0c7a94d2b.png"
+            src={snowblower}
             alt="Снегоуборщик в подарок"
-            className="hidden md:block absolute right-4 lg:right-10 bottom-0 h-[85%] max-h-[420px] object-contain drop-shadow-2xl"
+            className="hidden md:block absolute right-2 lg:right-8 bottom-0 w-[46%] lg:w-[42%] max-w-[420px] object-contain drop-shadow-2xl"
           />
           <div className="absolute inset-0 flex items-center">
-            <div className="px-4 sm:px-8 md:px-14 max-w-xl">
+            <div className="px-4 sm:px-8 md:px-10 md:max-w-[54%] lg:max-w-xl">
               <div className="inline-block bg-primary text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                 Акция ОСЕНЬ — готовимся к зиме
               </div>
