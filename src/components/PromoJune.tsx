@@ -14,7 +14,7 @@ export function PromoJune() {
           <img
             src={snowblower}
             alt="Снегоуборщик в подарок"
-            className="hidden md:block absolute right-2 lg:right-8 bottom-0 w-[46%] lg:w-[42%] max-w-[420px] object-contain drop-shadow-2xl"
+            className="hidden md:block absolute right-2 lg:right-8 bottom-6 md:bottom-10 lg:bottom-12 w-[46%] lg:w-[42%] max-w-[420px] object-contain drop-shadow-2xl"
           />
           <div className="absolute inset-0 flex items-center">
             <div className="px-4 sm:px-8 md:px-10 md:max-w-[54%] lg:max-w-xl">
