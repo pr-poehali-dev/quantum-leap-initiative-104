@@ -4,11 +4,16 @@ export function PromoJune() {
       <div className="container mx-auto max-w-5xl">
         <div className="relative rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/files/a17b2ff6-9b83-49ea-9b88-1bbf2c517ced.jpg"
+            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/files/6c94686f-1c3c-4cab-819f-7a86d6172209.jpg"
             alt="Акция Осень — готовимся к зиме"
             className="w-full h-[280px] sm:h-[360px] md:h-[420px] lg:h-[480px] object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/10" />
+          <img
+            src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/59fbc0fb-18fa-4acd-918c-b4a0c7a94d2b.png"
+            alt="Снегоуборщик в подарок"
+            className="hidden md:block absolute right-4 lg:right-10 bottom-0 h-[85%] max-h-[420px] object-contain drop-shadow-2xl"
+          />
           <div className="absolute inset-0 flex items-center">
             <div className="px-4 sm:px-8 md:px-14 max-w-xl">
               <div className="inline-block bg-primary text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
