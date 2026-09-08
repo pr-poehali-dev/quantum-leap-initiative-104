@@ -35,7 +35,7 @@ export function CoverHousePromo() {
           </div>
         </div>
       </div>
-      <div className="h-24 sm:h-32 md:h-40" />
+      <div className="h-[360px] sm:h-[420px] md:h-[480px] lg:h-[540px]" />
     </div>
   )
 }
