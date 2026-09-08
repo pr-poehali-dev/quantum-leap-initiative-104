@@ -28,9 +28,6 @@ export function CoverHousePromo() {
                   5 500 000 ₽
                 </span>
               </div>
-              <p className="text-white/80 text-sm md:text-base border-l-4 border-primary pl-4 inline-block text-left">
-                Торопитесь, предложение ограничено!
-              </p>
             </div>
           </div>
         </div>
