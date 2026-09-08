@@ -8,7 +8,7 @@ export function CoverHousePromo() {
           className="w-full h-[360px] sm:h-[420px] md:h-[480px] lg:h-[540px] object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-start justify-center pt-10 sm:pt-14 md:pt-16">
           <div className="px-4 text-center max-w-2xl">
             <div className="inline-block bg-primary text-white text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase tracking-widest px-8 py-3 rounded-full mb-6">
               Супер-акция
