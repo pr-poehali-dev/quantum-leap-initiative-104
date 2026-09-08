@@ -1,5 +1,3 @@
-import Icon from "@/components/ui/icon"
-
 export function CSRProgram() {
   return (
     <section className="py-20 md:py-28 bg-secondary/40">
@@ -20,11 +18,13 @@ export function CSRProgram() {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-background border border-border p-8 md:p-10 flex flex-col items-center text-center gap-4">
-              <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon name="Accessibility" size={36} className="text-primary" />
-              </div>
-              <div>
+            <div className="bg-background border border-border overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/files/35b1e9bf-7b1d-402f-afe8-e32ca44a7429.jpg"
+                alt="Дом с пандусом для людей с ограниченными возможностями"
+                className="w-full h-56 md:h-64 object-cover"
+              />
+              <div className="p-6 md:p-8 text-center">
                 <h4 className="text-lg md:text-xl font-medium mb-3">
                   Строительство нового жилья
                 </h4>
@@ -34,11 +34,13 @@ export function CSRProgram() {
               </div>
             </div>
 
-            <div className="bg-background border border-border p-8 md:p-10 flex flex-col items-center text-center gap-4">
-              <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon name="Hammer" size={36} className="text-primary" />
-              </div>
-              <div>
+            <div className="bg-background border border-border overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/files/fa0b162b-c352-457f-b39d-c89ff6245cbd.jpg"
+                alt="Адаптированный интерьер квартиры для маломобильных людей"
+                className="w-full h-56 md:h-64 object-cover"
+              />
+              <div className="p-6 md:p-8 text-center">
                 <h4 className="text-lg md:text-xl font-medium mb-3">
                   Ремонт существующего жилья
                 </h4>
