@@ -1,6 +1,6 @@
 export function VeniceVillage() {
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative z-10 py-16 md:py-24 overflow-hidden shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.4)]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/4c8eee7e-241c-4538-b6fb-705490a228b9.jpg')" }}
