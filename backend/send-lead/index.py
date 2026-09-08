@@ -23,7 +23,7 @@ def save_lead(name: str, phone: str, message: str, telegram_sent: bool) -> None:
 
 
 def handler(event: dict, context) -> dict:
-    """Принимает заявку с сайта, сохраняет её в базу и отправляет уведомление в Telegram и WhatsApp"""
+    """Принимает заявку с сайта, сохраняет её в базу и отправляет уведомление в Telegram"""
 
     if event.get('httpMethod') == 'OPTIONS':
         return {
@@ -81,38 +81,6 @@ def handler(event: dict, context) -> dict:
         telegram_sent = False
         telegram_error = str(e)
 
-    whatsapp_error = None
-    instance_id = os.environ.get('GREEN_API_INSTANCE_ID')
-    green_token = os.environ.get('GREEN_API_TOKEN')
-    notify_phone = os.environ.get('WHATSAPP_NOTIFY_PHONE')
-
-    if instance_id and green_token and notify_phone:
-        wa_text = (
-            f"📋 Новая заявка с сайта ФорТЭК\n\n"
-            f"👤 Имя: {name}\n"
-            f"📞 Телефон: {phone}\n"
-        )
-        if message:
-            wa_text += f"💬 Сообщение: {message}\n"
-
-        wa_data = json.dumps({
-            'chatId': f'{notify_phone}@c.us',
-            'message': wa_text
-        }).encode()
-
-        wa_req = urllib.request.Request(
-            f'https://api.green-api.com/waInstance{instance_id}/sendMessage/{green_token}',
-            data=wa_data,
-            method='POST',
-            headers={'Content-Type': 'application/json'}
-        )
-
-        try:
-            with urllib.request.urlopen(wa_req, timeout=8) as resp:
-                resp.read()
-        except Exception as e:
-            whatsapp_error = str(e)
-
     try:
         save_lead(name, phone, message, telegram_sent)
     except Exception as e:
@@ -122,14 +90,15 @@ def handler(event: dict, context) -> dict:
             'body': json.dumps({'error': 'Не удалось сохранить заявку', 'details': str(e)})
         }
 
-    result = {'success': True}
     if not telegram_sent:
-        result['telegram_error'] = telegram_error
-    if whatsapp_error:
-        result['whatsapp_error'] = whatsapp_error
+        return {
+            'statusCode': 200,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'success': True, 'telegram_error': telegram_error})
+        }
 
     return {
         'statusCode': 200,
         'headers': {'Access-Control-Allow-Origin': '*'},
-        'body': json.dumps(result)
+        'body': json.dumps({'success': True})
     }
