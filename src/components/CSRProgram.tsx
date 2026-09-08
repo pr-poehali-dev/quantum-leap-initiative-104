@@ -1,3 +1,5 @@
+import { HighlightedText } from "./HighlightedText"
+
 export function CSRProgram() {
   return (
     <section className="py-20 md:py-28 bg-secondary/40">
@@ -7,7 +9,7 @@ export function CSRProgram() {
             Бизнес с программой КСО
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium leading-[1.15] tracking-tight mb-6 text-center">
-            Корпоративная социальная ответственность
+            Корпоративная социальная <HighlightedText>ответственность</HighlightedText>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center mb-12">
             Наша деятельность — это не просто стремление к прибыли, а осознанная стратегия, которая помогает сбалансировать коммерческие цели с пользой для общества.
