@@ -15,17 +15,37 @@ export function CSRProgram() {
             Наша деятельность — это не просто стремление к прибыли, а осознанная стратегия, которая помогает сбалансировать коммерческие цели с пользой для общества.
           </p>
 
-          <div className="bg-background border border-border p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center">
-              <Icon name="Accessibility" size={36} className="text-primary" />
+          <h3 className="text-xl md:text-2xl font-medium mb-6 text-center">
+            Адаптация жилья под нужды людей с ограниченными возможностями
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-background border border-border p-8 md:p-10 flex flex-col items-center text-center gap-4">
+              <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                <Icon name="Accessibility" size={36} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="text-lg md:text-xl font-medium mb-3">
+                  Строительство нового жилья
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Проектируем и строим дома с учётом доступной среды — пандусы, широкие дверные проёмы, продуманная эргономика пространства.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-xl md:text-2xl font-medium mb-3">
-                Адаптация жилья под нужды людей с ограниченными возможностями
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Проектируем и строим дома с учётом доступной среды — пандусы, широкие дверные проёмы, продуманная эргономика пространства. Делаем комфортное жильё доступным для каждого.
-              </p>
+
+            <div className="bg-background border border-border p-8 md:p-10 flex flex-col items-center text-center gap-4">
+              <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                <Icon name="Hammer" size={36} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="text-lg md:text-xl font-medium mb-3">
+                  Ремонт существующего жилья
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Адаптируем уже построенные дома под нужды людей с ограниченными возможностями — делаем комфортное жильё доступным для каждого.
+                </p>
+              </div>
             </div>
           </div>
         </div>
