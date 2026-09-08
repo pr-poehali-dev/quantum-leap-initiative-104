@@ -4,6 +4,7 @@ import { Hero } from "../components/Hero"
 import { PromoJune } from "../components/PromoJune"
 import { Philosophy } from "../components/Philosophy"
 import { Ambassador } from "../components/Ambassador"
+import { CoverHousePromo } from "../components/CoverHousePromo"
 import { Projects } from "../components/Projects"
 import { Expertise } from "../components/Expertise"
 import { CatalogForm } from "../components/CatalogForm"
@@ -38,6 +39,7 @@ export default function Index() {
       <Hero />
       <PromoJune />
       <Ambassador />
+      <CoverHousePromo />
       <VeniceVillage />
       <Philosophy />
       <Projects />
