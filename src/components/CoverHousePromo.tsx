@@ -32,6 +32,23 @@ export function CoverHousePromo() {
             </p>
           </div>
         </div>
+
+        <div className="absolute -bottom-1 left-0 right-0 overflow-hidden leading-[0] z-10">
+          <svg
+            className="relative block w-full h-16 md:h-24"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,40 C300,110 900,-30 1200,40 L1200,120 L0,120 Z"
+              className="fill-background"
+            />
+            <path
+              d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
+              className="fill-primary/25"
+            />
+          </svg>
+        </div>
       </div>
     </section>
   )
