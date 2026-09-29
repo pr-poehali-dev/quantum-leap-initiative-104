@@ -4,7 +4,7 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react"
 const projects = [
   {
     id: 10,
-    title: "Каркасный дом",
+    title: "Каркасный 2-х этажный дом, с/с Толмачевский",
     category: "Классическая каркасная технология",
     location: "Новосибирский район, Новосибирская область",
     year: "2026",
