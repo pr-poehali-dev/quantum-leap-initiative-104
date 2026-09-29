@@ -3,6 +3,22 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react"
 
 const projects = [
   {
+    id: 10,
+    title: "Каркасный дом",
+    category: "Классическая каркасная технология",
+    location: "Новосибирский район, Новосибирская область",
+    year: "2026",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/513e6b95-e5bd-45a7-8b4d-8a905a59c5d8.png",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/513e6b95-e5bd-45a7-8b4d-8a905a59c5d8.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/977b54b8-4d5b-4e39-bede-57247799154a.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/0288f774-a3c7-4a41-8281-1c7be6136a61.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/21e8f16a-e67c-45f3-8f23-0a5cebf05e5b.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/6468f7fc-2155-480e-8dc7-e65e7ff6788d.png",
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/a3faf39d-3ee8-4551-b6de-3efd7bf7da00.png",
+    ],
+  },
+  {
     id: 9,
     title: "Модульная баня неповторимого дизайна, ручная работа",
     category: "Модульное строительство",
