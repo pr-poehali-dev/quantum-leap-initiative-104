@@ -3,6 +3,17 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react"
 
 const projects = [
   {
+    id: 11,
+    title: "Каркасный дом с мансардным этажем, с. Раздольное",
+    category: "Классическая каркасная технология",
+    location: "Новосибирский район, Новосибирская область",
+    year: "2026",
+    image: "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/4981ccb8-56d6-4edd-84e2-f8e1a13c01f0.png",
+    gallery: [
+      "https://cdn.poehali.dev/projects/a5534061-e108-4a3e-a7e8-8dd4e55bb3fd/bucket/4981ccb8-56d6-4edd-84e2-f8e1a13c01f0.png",
+    ],
+  },
+  {
     id: 10,
     title: "Каркасный 2-х этажный дом, с/с Толмачевский",
     category: "Классическая каркасная технология",
